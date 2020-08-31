@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Indefinable</title>
+    <link rel="stylesheet" href="styles/stylehome.css">
+    <link rel="stylesheet" href="styles/lightbox.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada&family=Lobster&display=swap" rel="stylesheet">
+    <!-- <script src="/javascript/script.js"></script> -->
+    <script src="javascript/homeScript.js"></script>
+    <script src="javascript/lightbox-plus-jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.jpg" alt="logo"></a>
+        </div>
+        <div class="authorName">
+            <h3>
+                Vashishtha Brothers creation
+            </h3>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="homeNav" onmouseover="homeHover()" onmouseout="hoverend()"> Home </a></li>
+            <li><a href="#album" class="albumNav" onmouseover="albumHover()" onmouseout="hoverend()"> Albums </a></li>
+            <li><a href="#" class="activityNav" onmouseover="activityHover()" onmouseout="hoverend()"> Activities </a></li>
+            <li><a href="#digital" class="aboutNav" onmouseover="aboutHover()" onmouseout="hoverend()"> About </a></li>
+            </ul>
+    </nav>
+
+<!-- Left Nav and Hero Box -->
+
+<div class="boxes">
+    <div class="leftNav">
+        <ul>
+            <li><a href="#album" onclick="potraitThumbnails()">Portrait</a></li>
+            <li><a href="#album" onclick="animationThumbnails()">Animation</a></li>
+            <li><a href="#album" onclick="abstractThumbnails()">Abstract</a></li>
+            <li><a href="#album" onclick="productThumbnails()">Product</a></li>
+            <li><a href="#album" onclick="digitalThumbnails()" id="digital">Digital</a></li>
+            <li><a href="#album" onclick="craftThumbnails()">Craft</a></li>
+        </ul>
+    </div>
+
+    <div class="heroBox">
+        <h3>
+            Create Indefinable
+        </h3>
+        <h2>
+            Ignite The Creater In You.
+        </h2>
+        <div class="heroButton">
+            <!-- <a href="#">
+                <button class="viewButton">View all</button>
+            </a> -->
+            <a href="https://www.instagram.com/create_indefinable/" target="_blank">
+                <button class="connectButton">Connect</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- About Author and Images -->
+
+<div class="aboutContainer">
+    <div class="shantanuImg" data-aos="fade-right">
+        <img src="images/Shantanu.jpg" alt="Shantanu(Author) Image">
+    </div>
+    <div class="about" data-aos="fade-up">
+        "Art washes away 
+        from the soul 
+        The dust of everyday life"
+        - Pablo Picasso <br>
+
+        Create Indefinable is a startup through which we aim to present our art works to public. 
+        Through this platform we recieve a lot of love from all our supportes which helps us to keep our spirit high and keeps us motivated to create more and more art works and ignite the creater within us.
+        We aim to present all genres of art, may it be animation, portraits, abstract, logo designs, product designs, craft, sketching, water paintings, and a lot more. <br>
+
+        Also we take orders for any kind artwork including logo designs, portraits, animated wallpapers, craft works, etc.
+    </div>
+    <div class="puruImg" data-aos="fade-left">
+        <img src="images/puru.jpg" alt="Puru(Author) Image">
+
+    </div>
+</div>
+
+<!-- Albums Thumbnail -->
+
+<h2 class="albumHeading" id="album" data-aos="fade-up">Albums</h2>
+
+<div class="albums">
+    <div class=abstract data-aos="fade-right">
+        <p onclick="abstractThumbnails()">Abstract</p>
+    </div>
+    <div class="potrait" data-aos="fade-right">
+        <p onclick="potraitThumbnails()">Portrait</p>
+    </div>
+    <div class=animation data-aos="fade-right">
+        <p onclick="animationThumbnails()">Animation</p>
+    </div>
+    
+    <div class=product data-aos="fade-left">
+        <p onclick="productThumbnails()">Product</p>
+    </div>
+    <div class=digital data-aos="fade-left">
+        <p onclick="digitalThumbnails()">Digital</p>
+    </div>
+    <div class=craft data-aos="fade-left">
+        <p onclick="craftThumbnails()">Craft</p>
+    </div>
+</div>
+
+<div class="albumNameDisplay">
+    <h2 id="albumName" data-aos="fade-up">Abstract</h2>
+</div>
+
+<div class="albumImg" data-aos="flip-up" data-aos-offset="180">
+    <a href="Abstract/1.jpg" data-lightbox="mygallery" id="l1"><img src="Abstract/1.jpg" alt="" id="p1"></a>
+    <a href="Abstract/2.jpg" data-lightbox="mygallery" id="l2"><img src="Abstract/2.jpg" alt="" id="p2"></a>
+    <a href="Abstract/3.jpg" data-lightbox="mygallery" id="l3"><img src="Abstract/3.jpg" alt="" id="p3"></a>
+    <a href="Abstract/4.jpg" data-lightbox="mygallery" id="l4"><img src="Abstract/4.jpg" alt="" id="p4"></a>
+    <a href="Abstract/5.jpg" data-lightbox="mygallery" id="l5"><img src="Abstract/5.jpg" alt="" id="p5"></a>
+    <a href="Abstract/6.jpg" data-lightbox="mygallery" id="l6"><img src="Abstract/6.jpg" alt="" id="p6"></a>
+    <a href="Abstract/7.jpg" data-lightbox="mygallery" id="l7"><img src="Abstract/7.jpg" alt="" id="p7"></a>
+    <a href="Abstract/8.jpg" data-lightbox="mygallery" id="l8"><img src="Abstract/8.jpg" alt="" id="p8"></a>
+</div>
+
+<!-- view more -->
+<div class="viewMoreLink">
+    <a href="#" id="viewMore" target="_blank">viewmore</a>
+</div>
+
+<!-- footer -->
+<footer>
+    <p>All original art work by Puru Vashishtha & Shantanu Vashishtha &copy;</p>
+    <p>Website designed and developed by Shivankar Vaish</p>
+</footer>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'disableScrolling':true
+    })
+</script>
+
+</body>
+</html>
